@@ -18,5 +18,8 @@ export default defineConfig({
         secure: false,
       }
     }
+  },
+  optimizeDeps: {
+    include: ['socket.io-client']
   }
 })
