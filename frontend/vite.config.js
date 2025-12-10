@@ -19,6 +19,11 @@ export default defineConfig({
       }
     }
   },
+  build: {
+    commonjsOptions: {
+      include: [/socket\.io-client/, /node_modules/]
+    }
+  },
   optimizeDeps: {
     include: ['socket.io-client']
   }
