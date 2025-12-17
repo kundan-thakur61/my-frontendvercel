@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiHome, FiBox, FiFileText, FiUsers } from 'react-icons/fi';
+import { FiHome, FiBox, FiFileText, FiUsers, FiTruck } from 'react-icons/fi';
 
 export default function AdminSidebar({ className = '' }) {
   const { pathname } = useLocation();
@@ -8,6 +8,7 @@ export default function AdminSidebar({ className = '' }) {
     const items = [
     { to: '/admin', label: 'Dashboard', icon: <FiHome /> },
     { to: '/admin/products', label: 'Products', icon: <FiBox /> },
+    { to: '/admin/orders', label: 'Orders', icon: <FiTruck /> },
     { to: '/admin/mobile', label: 'Mobile Management', icon: <FiFileText /> },
       { to: '/admin/themes', label: 'Themes', icon: <FiFileText /> },
     { to: '/admin/custom-orders', label: 'Custom Orders', icon: <FiFileText /> },
