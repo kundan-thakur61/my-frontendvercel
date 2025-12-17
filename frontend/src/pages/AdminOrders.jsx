@@ -190,6 +190,7 @@ export default function AdminOrders() {
   const clearFilters = () => {
     setStatusFilter('');
     setSearchValue('');
+    setLimit(LIMIT_OPTIONS[0]);
     if (pagination.currentPage !== 1) {
       dispatch(setAdminOrdersPage(1));
     }
