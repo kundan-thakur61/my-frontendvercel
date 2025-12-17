@@ -322,6 +322,12 @@ export default function AdminOrders() {
         </div>
       )}
 
+      {error && orders.length > 0 && (
+        <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
+          {error}
+        </div>
+      )}
+
       {orders.length === 0 && !inlineLoading ? (
         <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-10 text-center text-slate-500">
           <p className="text-lg font-semibold text-slate-700">No orders match your filters</p>
