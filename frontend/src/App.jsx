@@ -47,6 +47,7 @@ import AdminCustomOrders from './pages/AdminCustomOrders';
 import AdminUsers from './pages/AdminUsers';
 import AdminMobileManagement from './pages/AdminMobileManagement';
 import AdminThemes from './pages/AdminThemes';
+import AdminOrders from './pages/AdminOrders';
 import CustomOrders from './pages/CustomOrders';
 
 // Protected route wrapper
@@ -177,6 +178,11 @@ function App() {
         { path: 'admin/products', element: (
           <AdminRoute>
             <AdminProducts />
+          </AdminRoute>
+        ) },
+        { path: 'admin/orders', element: (
+          <AdminRoute>
+            <AdminOrders />
           </AdminRoute>
         ) },
         { path: 'admin/mobile/:type?', element: (
